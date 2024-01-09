@@ -1,0 +1,12 @@
+lr: 0.001
+weight_decay: 0.00001 # l2 norm
+
+max_len: 20
+
+user_id_dim: 1 # not used for SASREC
+item_id_dim: 64
+
+dropout_rate: 0.1
+num_blocks: 1
+num_heads: 2
+hidden_dim: 64

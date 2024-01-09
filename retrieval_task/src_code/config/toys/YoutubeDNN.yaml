@@ -1,0 +1,7 @@
+lr: 0.001
+weight_decay: 0.00001 # l2 norm
+
+max_len: 20
+
+user_id_dim: 64 # not used for SASREC
+item_id_dim: 64

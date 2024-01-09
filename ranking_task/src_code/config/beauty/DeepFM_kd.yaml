@@ -1,0 +1,18 @@
+lr: 0.008
+weight_decay: 0.0001
+
+max_len: 20
+
+user_id_dim: 32
+item_id_dim: 32
+item_brand_id_dim: 32
+item_cate_id_dim: 32
+
+lr_dim: 1
+
+mlp_hidden_size: [200, 80]
+dropout_prob: 0.1
+
+
+teacher_temp: 1
+distill_weight: 0.1

@@ -1,0 +1,11 @@
+lr: 0.001
+weight_decay: 0.00001 # l2 norm
+
+max_len: 20
+
+user_id_dim: 1 # not used for GRU4rec
+item_id_dim: 64
+
+hidden_size: 64
+num_layers: 1
+dropout_prob: 0.1

@@ -1,0 +1,19 @@
+lr: 0.001
+weight_decay: 0.00001 # l2 norm
+
+max_len: 20
+
+user_id_dim: 64 # not used for GRU4rec
+item_id_dim: 64
+
+hidden_size: 64
+num_layers: 1
+dropout_prob: 0.1
+
+decoder_emb_dim: 64
+decoder_nhead: 2
+aug_label_id_dim: 64
+cot_mapping_mlp_hidden_size: [768, 64] 
+ICL_history_mlp: [320, 64]
+reconstruct_weight: 0.0
+aug_dense_feat_dim: 64

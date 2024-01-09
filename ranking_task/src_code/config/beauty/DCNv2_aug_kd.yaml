@@ -1,0 +1,28 @@
+lr: 0.01
+weight_decay: 0.0001
+
+max_len: 20
+
+user_id_dim: 32
+item_id_dim: 32
+item_brand_id_dim: 32
+item_cate_id_dim: 32
+
+mixed: True
+structure: 'parallel'
+cross_layer_num: 2
+mlp_hidden_size: [200, 80]
+dropout_prob: 0.1
+expert_num: 4               # (int) The number of experts in mixed cross network.
+low_rank: 4
+
+decoder_emb_dim: 32
+decoder_nhead: 2
+aug_label_id_dim: 32
+cot_mapping_mlp_hidden_size: [768, 256, 32] 
+ICL_history_mlp: [288, 128, 32]
+reconstruct_weight: 1.0
+aug_dense_feat_dim: 32
+
+teacher_temp: 0.5
+distill_weight: 0.5

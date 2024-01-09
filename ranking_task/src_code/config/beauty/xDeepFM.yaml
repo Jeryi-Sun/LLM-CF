@@ -1,0 +1,18 @@
+lr: 0.01
+weight_decay: 0.0001
+
+max_len: 20
+
+user_id_dim: 32
+item_id_dim: 32
+item_brand_id_dim: 32
+item_cate_id_dim: 32
+
+num_feature_field: 7
+
+lr_dim: 1
+
+mlp_hidden_size: [200, 80]
+dropout_prob: 0.1
+direct: False                   # (bool) Whether or not to output the current layer directly.
+cin_layer_size: [100,100,100]   # (list of int) The size of CIN layers.

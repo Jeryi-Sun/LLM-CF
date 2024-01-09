@@ -1,0 +1,82 @@
+deepspeed --num_gpus 8 --master_port=9901 src/train_bash.py \
+    --deepspeed ds_config.json \
+    --stage sft \
+    --model_name_or_path /media/disk1/fordata/web_server/LLMs/llama2-hf/Llama-2-7b-chat-hf/ \
+    --do_train \
+    --dataset  amazon_rec_toys_ctr,alpaca_gpt4_en,lima \
+    --template llama2 \
+    --finetuning_type full \
+    --output_dir /media/disk1/fordata/web_server/LLMs/llama2-rec/amazon_toys/rec_gen_ctr/ \
+    --overwrite_cache \
+    --per_device_train_batch_size 16 \
+    --gradient_accumulation_steps 1 \
+    --per_device_eval_batch_size 16 \
+    --preprocessing_num_workers 8 \
+    --lr_scheduler_type cosine \
+    --logging_steps 10 \
+    --learning_rate 1e-5 \
+    --num_train_epochs 1.0 \
+    --plot_loss \
+    --cutoff_len 1024 \
+    --bf16 \
+    --overwrite_output_dir \
+    --eval_steps 500 \
+    --evaluation_strategy epoch \
+    --val_size 5 \
+    --save_strategy epoch \
+
+deepspeed --num_gpus 8 --master_port=9901 src/train_bash.py \
+    --deepspeed ds_config.json \
+    --stage sft \
+    --model_name_or_path /media/disk1/fordata/web_server/LLMs/llama2-hf/Llama-2-7b-chat-hf/ \
+    --do_train \
+    --dataset  amazon_rec_sports_ctr,alpaca_gpt4_en,lima \
+    --template llama2 \
+    --finetuning_type full \
+    --output_dir /media/disk1/fordata/web_server/LLMs/llama2-rec/amazon_sports/rec_gen_ctr/ \
+    --overwrite_cache \
+    --per_device_train_batch_size 16 \
+    --gradient_accumulation_steps 1 \
+    --per_device_eval_batch_size 16 \
+    --preprocessing_num_workers 8 \
+    --lr_scheduler_type cosine \
+    --logging_steps 10 \
+    --learning_rate 1e-5 \
+    --num_train_epochs 1.0 \
+    --plot_loss \
+    --cutoff_len 1024 \
+    --bf16 \
+    --overwrite_output_dir \
+    --eval_steps 500 \
+    --evaluation_strategy epoch \
+    --val_size 5 \
+    --save_strategy epoch \
+
+
+deepspeed --num_gpus 8 --master_port=9901 src/train_bash.py \
+    --deepspeed ds_config.json \
+    --stage sft \
+    --model_name_or_path /media/disk1/fordata/web_server/LLMs/llama2-hf/Llama-2-7b-chat-hf/ \
+    --do_train \
+    --dataset amazon_rec_beauty_ctr,alpaca_gpt4_en,lima \
+    --template llama2 \
+    --finetuning_type full \
+    --output_dir /media/disk1/fordata/web_server/LLMs/llama2-rec/amazon_beauty/rec_gen_ctr/ \
+    --overwrite_cache \
+    --per_device_train_batch_size 16 \
+    --gradient_accumulation_steps 1 \
+    --per_device_eval_batch_size 16 \
+    --preprocessing_num_workers 8 \
+    --lr_scheduler_type cosine \
+    --logging_steps 10 \
+    --learning_rate 1e-5 \
+    --num_train_epochs 1.0 \
+    --plot_loss \
+    --cutoff_len 1024 \
+    --bf16 \
+    --overwrite_output_dir \
+    --eval_steps 500 \
+    --evaluation_strategy epoch \
+    --val_size 5 \
+    --save_strategy epoch \
+
