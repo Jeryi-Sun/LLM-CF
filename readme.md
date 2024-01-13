@@ -10,6 +10,7 @@ Recent advancements in Large Language Models (LLMs) have attracted considerable 
 ## Train RecGen-LLaMA
 The training process of RecGen-LLaMA is based on the open-sourced [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main).
 The LLaMA-2-7b-chat can be downloaded from [huggingface](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf).
+The matching model can be downloaded from [huggingface](https://huggingface.co/BAAI/bge-large-en-v1.5).
 
 ```python
 cd LLaMA-Factory/
