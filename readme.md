@@ -52,3 +52,12 @@ bash run_beauty.sh run_sports.sh  run_toys.sh
 ```
 
 The parameters used in above code are shown in their own files as default parameters.
+
+```
+@article{sun2024large,
+  title={Large Language Models Enhanced Collaborative Filtering},
+  author={Sun, Zhongxiang and Si, Zihua and Zang, Xiaoxue and Zheng, Kai and Song, Yang and Zhang, Xiao and Xu, Jun},
+  journal={arXiv preprint arXiv:2403.17688},
+  year={2024}
+}
+```
